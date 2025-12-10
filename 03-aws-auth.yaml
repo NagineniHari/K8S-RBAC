@@ -1,0 +1,22 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::996058207546:role/eksctl-safety-dev-nodegroup-safety-NodeInstanceRole-Nk1Yb3BvfEaz
+      groups:
+      - system:bootstrappers
+      - system:nodes
+      username: system:node:{{EC2PrivateDNSName}}
+
+  mapUsers: |
+    - groups:
+      - safety-trainee
+      userarn: arn:aws:iam::996058207546:user/Hari_kubernetes
+      username: Hari_kubernetes
+
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2025-12-10T07:04:51Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1475"
+  uid: 115b820d-a004-4e1c-bd8f-e2ea80c61109
