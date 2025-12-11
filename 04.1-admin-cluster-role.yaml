@@ -14,7 +14,7 @@ kind: ClusterRole
 metadata:
   name: safety-admin
 rules:
-- apiGroups: ["storage.k8s.io/v1"] # "" indicates the core API group
+- apiGroups: ["storage.k8s.io"] # "" indicates the core API group
   resources: ["StorageClass"]
   verbs: ["get", "watch", "list"]
 
