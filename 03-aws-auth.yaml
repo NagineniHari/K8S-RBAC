@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   mapRoles: |
-    - rolearn: arn:aws:iam::996058207546:role/eksctl-safety-dev-nodegroup-safety-NodeInstanceRole-Nk1Yb3BvfEaz
+    - rolearn: arn:aws:iam::996058207546:role/eksctl-safety-dev-nodegroup-safety-NodeInstanceRole-vuj7a9bOKkJ2
       groups:
       - system:bootstrappers
       - system:nodes
@@ -15,8 +15,8 @@ data:
 
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2025-12-10T07:04:51Z"
+  creationTimestamp: "2025-12-11T09:15:29Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1475"
-  uid: 115b820d-a004-4e1c-bd8f-e2ea80c61109
+  resourceVersion: "1153"
+  uid: 78424e75-24dd-4297-b04c-3f1a2239b711
