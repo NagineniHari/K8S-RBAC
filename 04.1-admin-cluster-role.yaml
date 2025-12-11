@@ -15,10 +15,9 @@ metadata:
   name: safety-admin
 rules:
 - apiGroups: ["storage.k8s.io"] # "" indicates the core API group
-  resources: ["StorageClass"]
+  resources: ["storageclasses"]
   verbs: ["get", "watch", "list"]
-
 - apiGroups: [""] # "" indicates the core API group
-  resources: ["PersistentVolume"]
+  resources: ["persistentvolumes"]
   verbs: ["get", "watch", "list"]
 
