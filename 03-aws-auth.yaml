@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   mapRoles: |
-    - rolearn: arn:aws:iam::996058207546:role/eksctl-safety-dev-nodegroup-safety-NodeInstanceRole-vuj7a9bOKkJ2
+    - rolearn: arn:aws:iam::9960xxxxx:role/eksctl-safety-dev-nodegroup-safety-NodeInstanceRole-vuj7a9bOKkJ2
       groups:
       - system:bootstrappers
       - system:nodes
@@ -10,7 +10,7 @@ data:
   mapUsers: |
     - groups:
       - safety-trainee
-      userarn: arn:aws:iam::996058207546:user/Hari_kubernetes
+      userarn: arn:aws:iam::9960xxxxxx:user/Hari_kubernetes
       username: Hari_kubernetes
 
 kind: ConfigMap
