@@ -10,17 +10,17 @@ data:
   mapUsers: |
     - groups:
       - safety-trainee
-      userarn: arn:aws:iam::996058207546:user/Hari_kubernetes
+      userarn: arn:aws:iam::99xxxxxxxx:user/Hari_kubernetes
       username: Hari_kubernetes
 
     - groups:
       - safety-trainee
-      userarn: arn:aws:iam::996058207546:user/haribabu
+      userarn: arn:aws:iam::9960xxxxxx:user/haribabu
       username: haribabu
 
     - groups:
       - safety-trainee
-      userarn: arn:aws:iam::996058207546:user/rambabu
+      userarn: arn:aws:iam::9960xxxxxx:user/rambabu
       username: rambabu
 
 kind: ConfigMap
