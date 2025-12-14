@@ -1,5 +1,5 @@
 ---
-## Step-1: Create an IAM OIDC provider.
+## Step-1: Create an IAM OIDC provider(connector).
 
 eksctl utils associate-iam-oidc-provider \
     --region us-east-1 \
