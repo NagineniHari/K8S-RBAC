@@ -12,6 +12,11 @@ eksctl utils associate-iam-oidc-provider \
 eksctl create iamserviceaccount --cluster=safety-dev --name=secret-reader-sa --namespace=safety --attach-policy-arn=arn:aws:iam::996058207546:policy/safetyMYSQLSecretReader --approve
 ---\
 
+## aws cli to access secret
+
+aws secretsmanager get-secret-value --secret-id safety/dev/mysql-password --query SecretString --output text
+
+
 
 
 
